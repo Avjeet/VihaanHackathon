@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                VolleyLog.d("yourTag", "Error: " + error.getMessage().toString());
+                VolleyLog.d("yourTag", "Error: " + error.getMessage());
                 progressDialog.hide();
             }
         });

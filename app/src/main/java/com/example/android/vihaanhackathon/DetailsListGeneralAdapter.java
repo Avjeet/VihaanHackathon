@@ -44,7 +44,7 @@ public class DetailsListGeneralAdapter extends RecyclerView.Adapter<DetailsListG
         TextView generalName;
         public MyViewGeneralAdapter(View itemView) {
             super(itemView);
-            generalName = itemView.findViewById(R.id.generalrowText);
+            generalName = itemView.findViewById(R.id.generalRowText);
         }
     }
 }

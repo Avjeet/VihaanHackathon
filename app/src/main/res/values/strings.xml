@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">VihaanHackathon</string>
+    <string name="app_name">Be-RailSafe</string>
     <string name="action_settings">Settings</string>
     <string name="train_no">Train No :</string>
     <string name="accident_area">Accident area :</string>

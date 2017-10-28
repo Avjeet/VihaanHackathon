@@ -3,43 +3,138 @@
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="4dp"
-    android:elevation="5dp">
+    android:elevation="5dp"
+    app:cardCornerRadius="15dp">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:background="#FFF3E0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="20dp">
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:textSize="20sp"
+                    android:id="@+id/textView"
+                    android:textColor="#651FFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/train_no"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/trainNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="028972"
+                    android:textSize="19sp"
+                    android:textColor="#000000"
+
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Survivors >>"
+                android:textStyle="bold"
+                android:textColor="#651FFF"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                />
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/train_derailed"
+            android:scaleType="centerCrop"
+            />
 
         <LinearLayout
+            android:gravity="center_vertical|right"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            >
 
-            <TextView
-                android:id="@+id/textView"
+            <LinearLayout
+                android:layout_centerVertical="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/train_no"
-                android:textStyle="bold" />
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp">
+                <TextView
+                    android:textSize="18sp"
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#651FFF"
+
+                    android:text="@string/time"
+                    android:layout_alignLeft="@id/textView3"
+
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:textSize="17sp"
+                    android:id="@+id/timeValue"
+                    android:text="10:01AM"
+                    android:textColor="#000000"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+
 
             <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/time"
-                android:textStyle="bold" />
-
-
-            <TextView
+                android:textSize="18sp"
+                android:textColor="#651FFF"
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/accident_area"
                 android:textStyle="bold" />
+
+            <TextView
+                android:textSize="19sp"
+                android:id="@+id/accidentArea"
+                android:textColor="#000000"
+                android:text="Gaya,Bihar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
         </LinearLayout>
 
         <LinearLayout
+            android:gravity="center_vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="5dp"
@@ -48,24 +143,7 @@
             android:orientation="vertical">
 
 
-            <TextView
-                android:id="@+id/trainNo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="dfdfdf"
 
-                />
-
-            <TextView
-                android:id="@+id/timeValue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-
-            <TextView
-                android:id="@+id/accidentArea"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
         </LinearLayout>
 
     </LinearLayout>
